@@ -1,0 +1,31 @@
+.v1 {
+    border-left: 1px solid rgb(37, 37, 37);
+    height: 430px;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+    border-radius:20px;
+  }
+
+.v2 {
+    border-right: 1px solid rgb(37, 37, 37);
+    height: 470px;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+    border-radius:20px;
+}
+.content{
+    margin: 10px;
+    padding: 20px;
+    width: auto;
+    height: 1400px;
+    align-content: center;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.left{
+    margin: 5px;
+    padding: 5px;
+    text-align:left;
+}

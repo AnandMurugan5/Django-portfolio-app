@@ -7,7 +7,7 @@ body{
     margin: auto;
     padding: 0%;
     width: auto;
-    height:500px;
+    height:600px;
     color: antiquewhite;
     background-color: rgb(22, 9, 46);
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -26,7 +26,6 @@ body{
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
@@ -51,6 +50,7 @@ body{
     font-style: italic;
     text-align: center;
 }
-.role{
-    animation: role 1s ease 0s infinite normal forwards;
+.header-h1{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 50px;
 }
