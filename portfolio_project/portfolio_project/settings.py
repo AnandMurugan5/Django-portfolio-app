@@ -57,7 +57,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'portfolio_project.urls'
-django_heroku.settings(locals())
 
 TEMPLATES = [
     {
@@ -139,6 +138,8 @@ if DEBUG:
 else:
     STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
+
+django_heroku.settings(locals())
 
 # config/settings.py
 LOGIN_REDIRECT_URL = 'index'
