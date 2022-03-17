@@ -116,12 +116,16 @@
             </div>
         </div>
     </div>
+    <hr>
     <div class="contact" id="contact">
         {% load crispy_forms_tags %}
         <h2>Contact</h2>
     <form class="form-gruop" method="post">
         {% csrf_token %}
         {{forms|crispy}}
+        <input type="checkbox"name="terms" required><span>Terms & conditions</span><br><br>
+       <button type="submit" class="btn btn-success">Submit</button>
+       <button type="reset" class="btn btn-danger">Cancel</button>
     </form>
     </div>
     <div class="footer">
