@@ -4,11 +4,11 @@ from django.db import models
 class contactform(models.Model):
     username = models.CharField(max_length=50)
     email = models.CharField(max_length=200)
-    content = models.CharField(max_length=1500)
+    Description = models.CharField(max_length=1500)
 
     def __str__(self):
         return self.email
     
     class Mate:
-        db_name = ["Contect"]
+        db_name = "Contect"
 

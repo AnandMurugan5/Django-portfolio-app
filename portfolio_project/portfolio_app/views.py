@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from .forms import emailform
 from .models import contactform
@@ -6,10 +6,12 @@ from .models import contactform
 # Create your views here.
 
 def index(request):
-    form = emailform.objects.all()
+    forms = emailform(request.POST)
     if request.method == 'POST':
-        if form.is_valid():
-            form.save()
-    contaxt = {'forms':form}
+        if forms.is_valid():
+            forms.save()
+    else:
+        forms = emailform()
+    contaxt = {'forms':forms}
 
     return render(request,'index.html',contaxt)
