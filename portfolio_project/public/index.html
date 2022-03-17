@@ -116,7 +116,7 @@
             </div>
         </div>
     </div>
-    <hr>
+    <br>
     <div class="contact" id="contact">
         {% load crispy_forms_tags %}
         <h2>Contact</h2>
@@ -124,13 +124,15 @@
         {% csrf_token %}
         {{forms|crispy}}
         <input type="checkbox"name="terms" required><span>Terms & conditions</span><br><br>
-       <button type="submit" class="btn btn-success">Submit</button>
+       <button type="submit" class="btn btn-success">Submit</button>&numsp;&numsp;
        <button type="reset" class="btn btn-danger">Cancel</button>
     </form>
     </div>
     <div class="footer">
         <div class="container">
-            <h1>footer</h1>
+            <br>
+            <h6>copy rights@2022</h6>
+            
         </div>
     </div>
 </body>
