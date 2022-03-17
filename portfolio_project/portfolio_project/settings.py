@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 #BASE_DIR = Path(__file__).resolve().parent.parent
@@ -55,7 +57,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'portfolio_project.urls'
-
+django_heroku.settings(locals())
 
 TEMPLATES = [
     {
